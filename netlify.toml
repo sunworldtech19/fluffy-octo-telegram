@@ -1,0 +1,18 @@
+[build]
+  publish = "out"
+  command = "bun run build"
+
+[[redirects]]
+  from = "https://sunworldtech.netlify.app/*"
+  to = "https://sunworldtech.com.ng/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.sunworldtech.com.ng/*"
+  to = "https://sunworldtech.com.ng/:splat"
+  status = 301
+  force = true
+
+[build.environment]
+  NODE_VERSION = "18"
